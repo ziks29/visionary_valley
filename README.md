@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Visionary Valley
 
-## Getting Started
+## Description
 
-First, run the development server:
+Visionary Valley is a full-stack Next.js web application, serving as a key portfolio piece showcasing my development skills. This platform is designed for sharing and discovering innovative ideas, providing a community-driven space for users to post their visions, explore popular concepts, and connect for collaboration. For more of my projects, visit my portfolio: [ushpuras.me](https://ushpuras.me).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Idea Sharing:** Users can post their unique ideas and visions with the community.
+- **Idea Exploration:** Browse through popular and latest ideas using a responsive carousel.
+- **Community Interaction:** Engage with other users to discuss, refine, and collaborate on ideas.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Already Done
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Home Page:** A welcoming interface showcasing popular and latest ideas.
+- **Database Connection:** Integrated with Prisma for robust database management.
+- **Card Layout:** Aesthetic and functional layout for idea display.
 
-## Learn More
+## To-Do
 
-To learn more about Next.js, take a look at the following resources:
+- **Login Functionality:** Secure user authentication.
+- **User Profile:** Personalized profiles for users.
+- **Idea Profile:** Detailed pages for each idea.
+- **Idea Room:** Interactive space for discussing and developing ideas.
+- **Server Functionality:** Enhanced backend features for improved performance and scalability.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To set up the project locally, follow these steps:
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/[your-username]/visionary_valley.git
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Navigate to the project directory:
+
+   ```bash
+   cd visionary_valley
+   ```
+
+3. Create a `.env` file in the root directory and add your database URL:
+
+   ```plaintext
+   DATABASE_URL="your-database-url"
+   ```
+
+4. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+5. Generate Prisma client:
+
+   ```bash
+   npm run prisma generate
+   ```
+
+6. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+7. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Contributing
+
+Contributions to Visionary Valley are welcome! Please refer to our contributing guidelines for detailed instructions on how to contribute.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
+
+## Contact
+
+For questions or suggestions, please reach out to @ziks0 on Telegram.
