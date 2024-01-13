@@ -9,7 +9,7 @@ export function Header() {
     <header className="container flex items-center justify-between p-4">
       <div className="flex items-center">
         <Link href="/" className="text-2xl">
-          Idea Hunter
+          Visionary Valley
         </Link>
       </div>
       <div className="flex gap-2 items-center">

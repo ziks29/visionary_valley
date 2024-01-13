@@ -3,7 +3,7 @@ import { HomeCarousel } from "@/components/HomeCarousel";
 import { Posts } from "@/components/Posts";
 import { Divider } from "@/components/ui/divider";
 export const metadata: Metadata = {
-  title: "Idea Hunter",
+  title: "Visionary Valley",
   description: "A place to share your ideas and find people to work with.",
 };
 
@@ -14,7 +14,9 @@ export default function Homepage() {
       {/* Hero Section */}
       <section className="flex flex-col gap-10">
         <div>
-          <h1 className="text-4xl text-center mb-2">Welcome to Idea Hunter!</h1>
+          <h1 className="text-4xl text-center mb-2">
+            Welcome to Visionary Valley!
+          </h1>
           <p className="text-center">
             A place to share your ideas and find people to work with.
           </p>

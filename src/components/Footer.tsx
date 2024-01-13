@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="container flex items-center justify-between mt-12 h-14 p-4">
       <div className="flex items-center">
-        <p className="">Idea Hunter © {new Date().getFullYear()}</p>
+        <p className="">Visionary Valley © {new Date().getFullYear()}</p>
       </div>
       <div className="flex gap-2 items-center">
         <Link href="http://GitHub.com/ziks29">
