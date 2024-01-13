@@ -29,6 +29,17 @@ interface PostData {
   updatedAt: string;
 }
 
+const tailwindColors = [
+  "red-500",
+  "amber-500",
+  "green-500",
+  "blue-500",
+  "indigo-500",
+  "purple-500",
+  "orange-500",
+  "lime-500",
+];
+
 function generateRandomPosts() {
   const names = [
     "New Website",
@@ -122,18 +133,21 @@ export function HomeCarousel({ className }: Readonly<{ className?: string }>) {
       <CarouselContent>
         {numberOfItems > 0 &&
           [...Array(numberOfItems)].map(generateRandomPosts).map((post) => (
-            <CarouselItem key={post.id} className="md:basis-1/2 lg:basis-1/3">
-              <Card className="aspect-square">
+            <CarouselItem
+              key={post.id}
+              className="items-stretch md:basis-1/2 lg:basis-1/3"
+            >
+              <Card className="h-full">
                 <Image
                   src="https://placehold.co/1200x400.png"
                   alt="Idea"
-                  width={600}
+                  width={1200}
                   height={400}
-                  className="p-2 rounded-xl h-1/3"
+                  className="p-2 rounded-xl"
                 />
-                <div className="h-2/3">
+                <div className="">
                   <CardHeader className="">
-                    <h3 className="text-md font-bold">
+                    <h3 className="leading-[20px] h-[40px] text-md font-bold">
                       {post.name} by {post.author}
                     </h3>
                   </CardHeader>
@@ -142,12 +156,17 @@ export function HomeCarousel({ className }: Readonly<{ className?: string }>) {
                       {sliceDescription(post.description)}
                     </CardDescription>
                   </CardContent>
-                  <CardFooter className="flex flex-wrap gap-1 h-[80px]">
+                  <CardFooter className="flex flex-wrap items-start gap-1 h-[80px]">
                     {post.requiredSkills.map((skill) => (
                       <Badge
                         variant={"outline"}
                         key={skill}
-                        className="bg-green-500"
+                        className={
+                          "bg-" +
+                          tailwindColors[
+                            Math.floor(Math.random() * tailwindColors.length)
+                          ]
+                        }
                       >
                         {skill}
                       </Badge>
@@ -158,13 +177,9 @@ export function HomeCarousel({ className }: Readonly<{ className?: string }>) {
             </CarouselItem>
           ))}
       </CarouselContent>
-      {/* Check if mobile and disable */}
-      {/* {(window.innerWidth > 768 || window.innerWidth === undefined) && (
-        <> */}
+
       <CarouselPrevious className="hidden md:flex" />
       <CarouselNext className="hidden md:flex" />
-      {/* </>
-      )} */}
     </Carousel>
   );
 }

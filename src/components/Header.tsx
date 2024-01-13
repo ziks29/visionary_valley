@@ -8,8 +8,11 @@ export function Header() {
   return (
     <header className="container flex items-center justify-between p-4">
       <div className="flex items-center">
-        <Link href="/" className="text-2xl">
+        <Link href="/" className="text-2xl hidden sm:block">
           Visionary Valley
+        </Link>
+        <Link href="/" className="text-2xl sm:hidden">
+          VV
         </Link>
       </div>
       <div className="flex gap-2 items-center">

@@ -147,7 +147,7 @@ export function Posts({ className }: Readonly<{ className?: string }>) {
               <Image
                 src="https://placehold.co/800x400.png"
                 alt="Idea"
-                width={600}
+                width={800}
                 height={400}
                 // fill
                 className="p-2 rounded-xl"
